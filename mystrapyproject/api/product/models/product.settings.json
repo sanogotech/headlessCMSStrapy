@@ -16,11 +16,22 @@
       "type": "float"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "categories": {
-      "via": "products",
-      "collection": "category"
+      "collection": "category",
+      "via": "products"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
